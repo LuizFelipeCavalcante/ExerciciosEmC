@@ -7,13 +7,14 @@ int main(){
         scanf("%d", &copias);
         if(copias < 0) break;
         if(copias <= 100){
-            valor = copias* 0.25;
+            valor = (float)copias*0.25;
         }
         else{
-            valor = copias * 0.20;
+            valor = (float)copias*0.20;
         }
 
-        printf("%2.f \n", valor);
+        printf("%.2f", valor);
+        printf("\n");
     }
     return 0;
 }
