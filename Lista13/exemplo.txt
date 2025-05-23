@@ -1,0 +1,3 @@
+Olá, mundo!
+Escrevendo no arquivo...
+Nova linha adicionada.
