@@ -1,4 +1,5 @@
 #include <string.h>
+
 int main(){
 char str[20];
 printf("Digite uma string: ");
