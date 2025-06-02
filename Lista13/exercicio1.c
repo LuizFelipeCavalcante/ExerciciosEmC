@@ -12,12 +12,13 @@ char str2[20];
 char str3[20];
 int a, b, c;
 
- scanf("%[^\n]", str1);
- scanf("%[^\n]", str2);
- scanf("%[^\n]", str3);
+ scanf("%[^\n] %d", str1, &a);
+ scanf("%[^\n] %d", str2, &b);
+ scanf("%[^\n] %d", str3, &c);
 
-fprintf(arquivo, "Olá, mundo!\n");
-fprintf(arquivo, "Escrevendo no arquivo...\n");
+fprintf(arquivo, "%s\n", str1);
+fprintf(arquivo, "%s\n", str2);
+fprintf(arquivo, "%s\n", str3);
 fclose(arquivo);
 return 0;
 }
