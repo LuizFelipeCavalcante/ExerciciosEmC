@@ -30,6 +30,7 @@ public:
         capacidade = 0;
         numeroPessoas = 0;
     }
+
     // Metodos set
     void setNome(string nome)
     {
@@ -51,6 +52,7 @@ public:
     {
         this->numeroPessoas = numeroPessoas;
     }
+
     // Metodos get
      string getNome()
     {
@@ -73,6 +75,7 @@ public:
         return numeroPessoas;
     }
     
+    //Metodos
     void Inicializa(int capacidade, int totalAndares)
     {
         nome = " ";
@@ -97,31 +100,10 @@ public:
             andarAtual++;
         }
     }
+    void Desce(){
+        if(andarAtual > 0){
+            andarAtual--;
+        }
+    }
 };
-int main()
-{
-    // Criando pessoa1 com construtor
-    Pessoa pessoa1("Joao", 25, 1.75);
-    // Criando pessoa2 e preenchendo com set
-    Pessoa pessoa2;
-    string nome;
-    int idade;
-    float altura;
-    cout << "Digite o nome da pessoa2: ";
 
-    getline(cin, nome);
-    pessoa2.setNome(nome);
-    cout << "Digite a idade da pessoa2: ";
-    cin >> idade;
-    pessoa2.setIdade(idade);
-    cout << "Digite a altura da pessoa2 (em metros): ";
-    cin >> altura;
-    pessoa2.setAltura(altura);
-    cout << endl
-         << "Dados da pessoa1:" << endl;
-    pessoa1.imprimirDados();
-    cout << endl
-         << "Dados da pessoa2:" << endl;
-    pessoa2.imprimirDados();
-    return 0;
-}
