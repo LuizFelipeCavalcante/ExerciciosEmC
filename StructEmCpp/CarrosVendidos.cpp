@@ -40,6 +40,9 @@ void carroMaisCaro(Carro lista[], int n){
     }
     cout <<"Carro mais caro: "<<endl;
     cout <<"Preco: "<<lista[indiceMaisCaro].preco<<endl; 
-    // cout <<"DataVenda: "<<lista[indiceMaisCaro].dataVenda.mes<<"/"<<lista[indiceMaisCaro].dataVendaendl;
+    cout <<"DataVenda: "<<lista[indiceMaisCaro].dataVenda.dia<<"/"<<lista[indiceMaisCaro].dataVenda.mes<<"/"<<lista[indiceMaisCaro].dataVenda.ano<<endl
+  <<"Modelo: "<<lista[indiceMaisCaro].modelo<<endl; 
      
 }
+
+int main()
