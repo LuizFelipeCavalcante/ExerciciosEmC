@@ -34,4 +34,16 @@ class Relogio{
         this->segundo = segundo;
     }
 
+    //metodo
+    void tempo(){
+        segundo ++;
+        if(segundo >= 60){
+            segundo = 0;
+            minuto ++;
+        }
+        if(minuto >= 60){
+            minuto = 0;
+            hora ++;
+        }
+    }
 };
